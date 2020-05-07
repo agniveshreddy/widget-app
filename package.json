@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "webpack --open",
-    "watch": "webpack --watch",
-    "devwatch": "webpack-dev-server --watch"
+    "dev:watch": "webpack-dev-server --watch"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
