@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const CustomTable = ({paginatedPosts}) =>{
     return(
@@ -11,7 +12,7 @@ const CustomTable = ({paginatedPosts}) =>{
                 </tr>
             </thead>
             <tbody> 
-                { paginatedPosts && paginatedPosts.map(item => {
+                { (paginatedPosts.length > 0) && paginatedPosts.map(item => {
                 const { id, title, body } = item;
                 return (
                 <tr key={id}>
@@ -23,5 +24,11 @@ const CustomTable = ({paginatedPosts}) =>{
             </tbody>
         </table>
     )
+};
+CustomTable.propTypes = {
+    paginatedPosts: PropTypes.array
+};
+CustomTable.defaultProps = {
+    paginatedPosts: []
 };
 export default CustomTable;
