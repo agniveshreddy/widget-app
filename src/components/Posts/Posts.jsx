@@ -16,7 +16,7 @@ const Posts = ({dispatch, posts = []}) => {
                     <th>BODY</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody> 
                 {posts.map(item => {
                 const { id, title, body } = item;
                 return (<tr>
