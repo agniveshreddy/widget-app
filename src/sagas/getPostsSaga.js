@@ -3,7 +3,6 @@ import { types } from '../actions';
 import { getPostsService } from '../services/getPostsService';
 
 export function* getPostsSaga(payload) {
-  console.log('came until here 1');
     try {
       const response = yield call(getPostsService, payload);
       yield put({ type: types.GET_POSTS_SUCESS, response });

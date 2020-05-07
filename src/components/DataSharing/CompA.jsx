@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const CompA = (props) => {
+const CompA = memo((props) => {
     let textInput = React.createRef();
     const onTransferClick = () => props.transferDataCallback(textInput.value);
     return(
@@ -11,5 +11,5 @@ const CompA = (props) => {
         <button onClick={onTransferClick}>->Transfer-></button>
         </>
     );
-}
+});
 export default CompA;

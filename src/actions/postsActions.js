@@ -5,4 +5,10 @@ export const getPosts = (token) => {
       type: types.GET_POSTS,
       token
     }
-  };
+};
+export const resetPosts = ()=>{
+  return {
+    type: types.RESET_POSTS,
+    token: '',
+  }
+}
