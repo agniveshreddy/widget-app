@@ -21,7 +21,7 @@
     "redux-devtools-extension": "^2.13.8",
     "redux-saga": "^0.15.0",
     "regenerator-runtime": "^0.13.5",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^5.2.1"
   },
   "eslintConfig": {
     "extends": "react-app"
